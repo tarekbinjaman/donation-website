@@ -10,7 +10,7 @@ function getValueFromTextField (id) {
 }
 
 function showSectionId(id) {
-    document.getElementById('cards').classList.add('hidden');
+    document.getElementById('cards-main').classList.add('hidden');
     document.getElementById('donation-history').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden')
 }

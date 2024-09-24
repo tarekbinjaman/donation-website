@@ -9,7 +9,7 @@
 </head>
 <body>
     <main>
-        <nav class="bg-yellow-100 sticky top-0 z-10">
+        <nav class="backdrop-blur-md bg-white-100 shadow-xl py-6 sticky top-0 z-30 ">
             <div class="navbar justify-between lg:w-4/6 lg:m-auto">
                     <!-- button -->
                      <div>
@@ -29,14 +29,18 @@
 
               </div>
         </nav>
+                    <!-- button start here -->
+                    <div class="button-area flex justify-center py-12 pb-10 space-x-4 sticky top-20 z-10 backdrop-blur-sm bg-white/30">
+                      <button id="donation-main-button" class="btn bg-yellow-300 px-8">Donation</button>
+                      <button id="history-button" class="btn btn-outline px-8">History</button>
+                  </div>
+                  <!-- button end here -->
         <div class="donation-page lg:w-4/6 lg:m-auto">
-            <!-- button start here -->
-            <div class="button-area flex justify-center pt-12 pb-10 space-x-4">
-                <button id="donation-main-button" class="btn bg-yellow-300 px-8">Donation</button>
-                <button id="history-button" class="btn btn-outline px-8">History</button>
-            </div>
-            <!-- button end here -->
+
             <!-- cards start -->
+             <div id="cards-main">
+
+             
              <div id="cards" class="cards my-12">
                 <div class="border-2 border-indigo-200 rounded-lg">
                     <!-- card-1 -->
@@ -76,7 +80,7 @@
              </div>
             <!-- cards end -->
             <!-- cards start -->
-             <div id="cards" class="cards my-12">
+             <div id="cards2" class="cards my-12">
                 <div class="border-2 border-indigo-200 rounded-lg">
                     <!-- card-1 -->
                     <div class="hero">
@@ -88,7 +92,7 @@
                                 <div class="stats shadow">
                                     <div class="stat flex">
                                         <img src="assets/coin.png" alt="">
-                                      <div id="stat-value1" class="stat-value">1000</div>
+                                      <div id="stat-value2" class="stat-value">1000</div>
                                       <div class="stat-desc">BDT</div>
                                     </div>
                                   </div>
@@ -101,12 +105,12 @@
                             </p>
                             <div class="space-y-4">
                                 <input
-                                    id="input-field1"
+                                    id="input-field2"
                                     type="text"
                                     placeholder="Add donation amount"
                                     class="input input-bordered input-accent w-full " />
                                 
-                                <button id="donate-button1" class="btn btn-primary w-full bg-yellow-300 text-black">Donate now</button>
+                                <button id="donate-button2" class="btn btn-primary w-full bg-yellow-300 text-black">Donate now</button>
                             </div>
                           </div>
                         </div>
@@ -115,7 +119,7 @@
              </div>
             <!-- cards end -->
             <!-- cards start -->
-             <div id="cards" class="cards my-12">
+             <div id="cards3" class="cards my-12">
                 <div class="border-2 border-indigo-200 rounded-lg">
                     <!-- card-1 -->
                     <div class="hero">
@@ -127,7 +131,7 @@
                                 <div class="stats shadow">
                                     <div class="stat flex">
                                         <img src="assets/coin.png" alt="">
-                                      <div id="stat-value1" class="stat-value">2000</div>
+                                      <div id="stat-value3" class="stat-value">2000</div>
                                       <div class="stat-desc">BDT</div>
                                     </div>
                                   </div>
@@ -140,12 +144,12 @@
                             </p>
                             <div class="space-y-4">
                                 <input
-                                    id="input-field1"
+                                    id="input-field3"
                                     type="text"
                                     placeholder="Add donation amount"
                                     class="input input-bordered input-accent w-full " />
                                 
-                                <button id="donate-button1" class="btn btn-primary w-full bg-yellow-300 text-black">Donate now</button>
+                                <button id="donate-button3" class="btn btn-primary w-full bg-yellow-300 text-black">Donate now</button>
                             </div>
                           </div>
                         </div>
@@ -153,14 +157,31 @@
                 </div>
              </div>
             <!-- cards end -->
+          </div>
              <!-- donatoin history start here -->
               <div id="donation-history" class="hidden">
                 <h2 class="text-5xl font-bold text-center">Donation history</h2>
                 <div class="divider"></div>
               </div>
         </div>
+        <!-- my modal -->
+         <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_1" class="modal hidden" >
+  <div class="modal-box ">
+    <h3 class="text-3xl text-center font-bold">Congratulation    </h3>
+    <img class="mx-auto" src="assets/coin.png" alt="">
+    <p class="py-4 text-center">You have donated humankind</p>
+    <h2 class="text-center">Successfully</h2>
+    <div class="modal-action flex justify-center">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
     </main>
-    <footer class="w-full h-40 bg-green-100">
+    <footer class="w-full py-12 bg-green-100">
     </footer>
     <script src="js/addMoney.js"></script>
     <script src="js/utilities.js"></script>
