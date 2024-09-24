@@ -1,4 +1,4 @@
 
 document.getElementById('blog').addEventListener('click', function() {
-    window.location.href = "/home.html";
+    window.location.href = "./home.html";
 })
