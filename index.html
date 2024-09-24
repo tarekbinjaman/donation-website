@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main>
+        <nav class="bg-yellow-100 sticky top-0 z-10">
+            <div class="navbar justify-between lg:w-4/6 lg:m-auto">
+                    <!-- button -->
+                     <div>
+                        <button id="blog" class="btn btn bg-yellow-300 px-8 text-xl">Blog</button>                                   
+                     </div>
+                     <!-- logo -->
+                <div class="hidden lg:block lg:flex lg:space-x-4">
+                    <img src="assets/logo.png" alt="">
+                    <h3 class="font-bold w-1/2">Donate Bangladesh</h3>
+                </div>
+                <!-- Balance -->
+                 <div class="flex items-center space-x-4 ">
+                    <img src="assets/coin.png" alt="">
+                    <div id="main-value" class="font-bold text-xl">5000</div>
+                    <h2 class="font-bold text-xl">BDT</h2>
+                 </div>
+
+              </div>
+        </nav>
+        <div class="donation-page lg:w-4/6 lg:m-auto">
+            <!-- button start here -->
+            <div class="button-area flex justify-center pt-12 pb-10 space-x-4">
+                <button id="donation-main-button" class="btn bg-yellow-300 px-8">Donation</button>
+                <button id="history-button" class="btn btn-outline px-8">History</button>
+            </div>
+            <!-- button end here -->
+            <!-- cards start -->
+             <div id="cards" class="cards">
+                <div class="border-2 border-indigo-200 rounded-lg">
+                    <!-- card-1 -->
+                    <div class="hero">
+                        <div class="hero-content flex-col lg:flex-row space-x-6">
+                            <img src="assets/feni.png" alt="">
+                          <div class="">
+                            <!-- stat start -->
+                            <div class="flex space-x-2">
+                                <div class="stats shadow">
+                                    <div class="stat flex">
+                                        <img src="assets/coin.png" alt="">
+                                      <div id="stat-value1" class="stat-value">4000</div>
+                                      <div class="stat-desc">BDT</div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <!-- stat end -->
+                            <div class="divider"></div>
+                            <h1 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                            <p class="py-6">
+                                The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                            </p>
+                            <div class="space-y-4">
+                                <input
+                                    id="input-field1"
+                                    type="text"
+                                    placeholder="Add donation amount"
+                                    class="input input-bordered input-accent w-full " />
+                                
+                                <button id="donate-button1" class="btn btn-primary w-full bg-yellow-300 text-black">Donate now</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+             </div>
+            <!-- cards end -->
+             <!-- donatoin history start here -->
+              <div id="donation-history" class="hidden">
+                <h2 class="text-5xl font-bold text-center">Donation history</h2>
+                <div class="divider"></div>
+              </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/addMoney.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>
